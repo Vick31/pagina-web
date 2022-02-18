@@ -102,7 +102,6 @@ html, body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 1rem;
 }
 
 #container-body #container-main main #content article {
@@ -137,19 +136,42 @@ html, body {
   -webkit-box-flex: 0.4;
       -ms-flex: 0.4;
           flex: 0.4;
-  background-color: #809bb6;
   height: 100%;
 }
 
 #container-body #container-main #shop h2 {
+  background-color: #809bb6;
   color: white;
-  padding: 0.8rem;
+  padding-top: 0.8rem;
+  height: 3rem;
   text-align: center;
 }
 
 #container-body #container-main #shop #section-shop {
-  height: 80%;
-  overflow-y: scroll;
+  border: 1px solid red;
+  height: 70%;
+}
+
+#container-body #container-main #shop #section-shop #date-client {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#container-body #container-main #shop #section-shop #date-client article {
+  width: 50%;
+  height: 4rem;
+  padding: 0.2rem;
+}
+
+#container-body #container-main #shop #section-shop #date-client article input {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #f5f5f5;
+  height: 3rem;
+  width: 100%;
 }
 
 #container-body #container-main #shop #section-shop section {
@@ -157,14 +179,13 @@ html, body {
 }
 
 #container-body #container-main #shop #section-shop section article {
-  border-bottom: 1px solid #e8ebf0;
   padding: 1rem;
 }
 
 #container-body #container-main #shop footer {
-  background-color: white;
-  position: relative;
-  bottom: 0rem;
+  position: absolute;
+  bottom: 0;
+  background-color: #f5f5f5;
   padding-bottom: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -173,28 +194,37 @@ html, body {
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
           flex-flow: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 100%;
+  width: 27.5%;
+  color: white;
+}
+
+#container-body #container-main #shop footer #title-footer {
+  padding: 1rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  border-radius: 4px;
+  background-color: #00b19d;
 }
 
 #container-body #container-main #shop footer div {
-  height: 3rem;
-  background-color: #f3d9d9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #809bb6;
   margin-top: 0.5rem;
 }
 
-#container-body #container-main #shop footer div h3 {
-  padding-top: 1rem;
-  padding-left: 1rem;
+#container-body #container-main #shop footer div a {
+  width: 4rem;
+  padding: 0.5rem;
+  text-decoration: none;
+  color: white;
 }
 
-#container-body #container-main #shop footer div button {
-  width: 4rem;
-  padding: 0.3rem;
-  position: absolute;
-  bottom: 1.5rem;
-  right: 1.5rem;
+#container-body #container-main #shop footer div h4 {
+  margin: 1rem;
 }
 /*# sourceMappingURL=style.css.map */

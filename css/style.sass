@@ -48,7 +48,7 @@ html, body
             #section-search
                 height: 3rem
                 display: flex
-                justify-content: center
+                justify-content: center 
                 padding-top: 1rem
 
 
@@ -75,14 +75,13 @@ html, body
                 display: flex
                 flex-wrap: wrap
                 justify-content: center
-                padding-top: 1rem
 
                 article
                     width: 15rem
                     height: 22rem
                     background-color: white
                     margin-top: 2rem
-                    margin-left: 3.5rem
+                    margin-left: 3.5rem 
                     margin-right: 3.5rem
                     border-radius: 5px
                     box-shadow: $box-shadow
@@ -102,46 +101,71 @@ html, body
 
         #shop
             flex: 0.4
-            background-color: #809bb6
             height: 100%
 
             h2
+                background-color: #809bb6
                 color: white
-                padding: 0.8rem
+                padding-top: 0.8rem
+                height: 3rem
                 text-align: center
 
             #section-shop
-                height: 80%
-                overflow-y: scroll
+                border: 1px solid red
+                height: 70%
 
+                #date-client
+                    display: flex
+                    flex-wrap: wrap
+                    article
+                        width: 50%
+                        height: 4rem
+                        padding: 0.2rem
+                        input 
+                            border: none
+                            outline: none
+                            border-bottom: 1px solid #f5f5f5
+                            height: 3rem
+                            width: 100%
+            
                 section
                     background-color: white
-                
+                    
                     article
-                        border-bottom: 1px solid $fond
+                        
                         padding: 1rem
 
             footer
-                
-                background-color: white
-                position: relative
-                bottom: 0rem
+                position: absolute
+                bottom: 0
+                background-color: #f5f5f5
                 padding-bottom: 1rem
                 display: flex
                 flex-flow: column
-                justify-content: center
-                width: 100%
+                width: 27.5%
+                color: white
+            
+                #title-footer
+                    padding: 1rem
+                    margin-left: 0.5rem
+                    margin-right: 0.5rem
+                    border-radius: 4px
+                    background-color: #00b19d
 
                 div
-                    height: 3rem
-                    background-color: rgb(243, 217, 217)
+                    display: flex
+                    justify-content: space-between
+                    
+                    background-color: #809bb6
                     margin-top: 0.5rem
-                    h3
-                        padding-top: 1rem
-                        padding-left: 1rem
-                    button
+
+                    a
                         width: 4rem
-                        padding: 0.3rem
-                        position: absolute
-                        bottom: 1.5rem
-                        right: 1.5rem
+                        padding: 0.5rem
+                        text-decoration: none
+                        color: white
+                    h4
+                        margin: 1rem
+
+                    
+                        
