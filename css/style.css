@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#container-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  height: 100%;
+}
+
+#container-body #nav-bar {
+  width: 100%;
+  height: 3rem;
+  background-color: #00b19d;
+}
+
+#container-body #container-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  height: 100%;
+}
+
+#container-body #container-main #index {
+  background-color: white;
+}
+
+#container-body #container-main #index .circle {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: gray;
+  border-radius: 100%;
+  margin: 0.5rem;
+}
+
+#container-body #container-main main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  background-color: #e8ebf0;
+  overflow-y: scroll;
+}
+
+#container-body #container-main main #section-search {
+  height: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 1rem;
+}
+
+#container-body #container-main main #section-search button {
+  width: 3.2rem;
+  height: 2.6rem;
+  border: none;
+  border-radius: 3px;
+  margin-right: 0.1rem;
+  background-color: #007E70;
+}
+
+#container-body #container-main main #section-search button img {
+  width: 2rem;
+  height: 2rem;
+}
+
+#container-body #container-main main #section-search input {
+  border: 1px solid #809bb6;
+  border-radius: 3px;
+  width: 35vw;
+  height: 2.6rem;
+  padding-left: 1rem;
+}
+
+#container-body #container-main main #content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 1rem;
+}
+
+#container-body #container-main main #content article {
+  width: 15rem;
+  height: 22rem;
+  background-color: white;
+  margin-top: 2rem;
+  margin-left: 3.5rem;
+  margin-right: 3.5rem;
+  border-radius: 5px;
+  -webkit-box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.3);
+          box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+#container-body #container-main main #content article img {
+  width: 15rem;
+  height: 15rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#container-body #container-main main #content article button {
+  padding: 0.5rem;
+  background-color: blue;
+  border: none;
+  border-radius: 4px;
+  color: white;
+}
+
+#container-body #container-main #shop {
+  -webkit-box-flex: 0.4;
+      -ms-flex: 0.4;
+          flex: 0.4;
+  background-color: #809bb6;
+  height: 100%;
+}
+
+#container-body #container-main #shop h2 {
+  color: white;
+  padding: 0.8rem;
+  text-align: center;
+}
+
+#container-body #container-main #shop #section-shop {
+  height: 80%;
+  overflow-y: scroll;
+}
+
+#container-body #container-main #shop #section-shop section {
+  background-color: white;
+}
+
+#container-body #container-main #shop #section-shop section article {
+  border-bottom: 1px solid #e8ebf0;
+  padding: 1rem;
+}
+
+#container-body #container-main #shop footer {
+  background-color: white;
+  position: absolute;
+  bottom: 0rem;
+  padding-bottom: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+#container-body #container-main #shop footer div {
+  height: 3rem;
+  background-color: #f3d9d9;
+  margin-top: 0.5rem;
+}
+
+#container-body #container-main #shop footer div h3 {
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+
+#container-body #container-main #shop footer div button {
+  width: 4rem;
+  padding: 0.3rem;
+  position: absolute;
+  bottom: 1.5rem;
+  right: 1.5rem;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,147 @@
+
+$fond: #e8ebf0;
+$box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.3)
+
+*
+    margin: 0
+    padding: 0
+    font-family: Arial, Helvetica, sans-serif
+    box-sizing: border-box
+
+html, body
+    height: 100%
+    margin: 0
+    padding: 0
+
+#container-body
+
+    display: flex
+    flex-flow: column
+    height: 100%
+
+    #nav-bar
+        width: 100%
+        height: 3rem
+        background-color: #00b19d
+
+    #container-main
+        display: flex
+        flex-flow: row
+        height: 100%
+        
+        #index
+
+            background-color: white
+
+            .circle
+                width: 2.5rem
+                height: 2.5rem
+                background-color: gray
+                border-radius: 100%
+                margin: 0.5rem
+
+        main
+            flex: 1
+            background-color: $fond
+            overflow-y: scroll
+
+            #section-search
+                height: 3rem
+                display: flex
+                justify-content: center
+                padding-top: 1rem
+
+
+                button
+                    width: 3.2rem
+                    height: 2.6rem    
+                    border: none
+                    border-radius: 3px
+                    margin-right: 0.1rem
+                    background-color: #007E70
+
+                    img
+                        width: 2rem
+                        height: 2rem
+                    
+                input
+                    border: 1px solid #809bb6
+                    border-radius: 3px
+                    width: 35vw
+                    height: 2.6rem
+                    padding-left: 1rem
+
+            #content
+                display: flex
+                flex-wrap: wrap
+                justify-content: center
+                padding-top: 1rem
+
+                article
+                    width: 15rem
+                    height: 22rem
+                    background-color: white
+                    margin-top: 2rem
+                    margin-left: 3.5rem
+                    margin-right: 3.5rem
+                    border-radius: 5px
+                    box-shadow: $box-shadow
+                    text-align: center
+
+                    img
+                        width: 15rem
+                        height: 15rem
+                        object-fit: cover
+
+                    button
+                        padding: 0.5rem
+                        background-color: blue
+                        border: none
+                        border-radius: 4px
+                        color: white
+
+        #shop
+            flex: 0.4
+            background-color: #809bb6
+            height: 100%
+
+            h2
+                color: white
+                padding: 0.8rem
+                text-align: center
+
+            #section-shop
+                height: 80%
+                overflow-y: scroll
+
+                section
+                    background-color: white
+                
+                    article
+                        border-bottom: 1px solid $fond
+                        padding: 1rem
+
+            footer
+                
+                background-color: white
+                position: absolute
+                bottom: 0rem
+                padding-bottom: 1rem
+                display: flex
+                flex-flow: column
+                justify-content: center
+                width: 100%
+
+                div
+                    height: 3rem
+                    background-color: rgb(243, 217, 217)
+                    margin-top: 0.5rem
+                    h3
+                        padding-top: 1rem
+                        padding-left: 1rem
+                    button
+                        width: 4rem
+                        padding: 0.3rem
+                        position: absolute
+                        bottom: 1.5rem
+                        right: 1.5rem
