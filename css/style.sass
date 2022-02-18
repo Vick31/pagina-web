@@ -1,5 +1,5 @@
 
-$fond: #e8ebf0;
+$fond: #e8ebf0
 $box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.3)
 
 *
@@ -27,7 +27,7 @@ html, body
     #container-main
         display: flex
         flex-flow: row
-        height: 100%
+        height: calc( 100% - 4rem )
         
         #index
 
@@ -43,7 +43,7 @@ html, body
         main
             flex: 1
             background-color: $fond
-            overflow-y: scroll
+            overflow-y: auto
 
             #section-search
                 height: 3rem
@@ -100,7 +100,7 @@ html, body
                         color: white
 
         #shop
-            flex: 0.4
+            flex: 0.5
             height: 100%
 
             h2
@@ -111,8 +111,7 @@ html, body
                 text-align: center
 
             #section-shop
-                border: 1px solid red
-                height: 70%
+                height: 80%
 
                 #date-client
                     display: flex
@@ -121,19 +120,22 @@ html, body
                     article
                         width: 45%
                         height: 4rem
+                        margin: 0.5rem
                         
                         input 
                             border: none
                             outline: none
-                            border-bottom: 1px solid #f5f5f5
+                            border-bottom: 2px solid #e8ebf0
                             height: 3rem
                             width: 100%
             
-                section
-                    background-color: white
-                    
-                    article
-                        
+                #date-product
+
+                    article 
+                        height: 4rem
+                        padding: 0.5rem
+                        border: 1px solid red
+                   
 
             footer
                 position: absolute
@@ -142,7 +144,7 @@ html, body
                 padding-bottom: 1rem
                 display: flex
                 flex-flow: column
-                width: 27.5%
+                width: 32%
                 color: white
             
                 #title-footer

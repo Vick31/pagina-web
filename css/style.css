@@ -37,7 +37,7 @@ html, body {
   -webkit-box-direction: normal;
       -ms-flex-flow: row;
           flex-flow: row;
-  height: 100%;
+  height: calc( 100% - 4rem);
 }
 
 #container-body #container-main #index {
@@ -57,7 +57,7 @@ html, body {
       -ms-flex: 1;
           flex: 1;
   background-color: #e8ebf0;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 #container-body #container-main main #section-search {
@@ -133,9 +133,9 @@ html, body {
 }
 
 #container-body #container-main #shop {
-  -webkit-box-flex: 0.4;
-      -ms-flex: 0.4;
-          flex: 0.4;
+  -webkit-box-flex: 0.5;
+      -ms-flex: 0.5;
+          flex: 0.5;
   height: 100%;
 }
 
@@ -148,8 +148,7 @@ html, body {
 }
 
 #container-body #container-main #shop #section-shop {
-  border: 1px solid red;
-  height: 70%;
+  height: 80%;
 }
 
 #container-body #container-main #shop #section-shop #date-client {
@@ -163,18 +162,21 @@ html, body {
 #container-body #container-main #shop #section-shop #date-client article {
   width: 45%;
   height: 4rem;
+  margin: 0.5rem;
 }
 
 #container-body #container-main #shop #section-shop #date-client article input {
   border: none;
   outline: none;
-  border-bottom: 1px solid #f5f5f5;
+  border-bottom: 2px solid #e8ebf0;
   height: 3rem;
   width: 100%;
 }
 
-#container-body #container-main #shop #section-shop section {
-  background-color: white;
+#container-body #container-main #shop #section-shop #date-product article {
+  height: 4rem;
+  padding: 0.5rem;
+  border: 1px solid red;
 }
 
 #container-body #container-main #shop footer {
@@ -189,7 +191,7 @@ html, body {
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
           flex-flow: column;
-  width: 27.5%;
+  width: 32%;
   color: white;
 }
 
