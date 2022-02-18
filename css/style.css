@@ -163,7 +163,7 @@ html, body {
 
 #container-body #container-main #shop footer {
   background-color: white;
-  position: absolute;
+  position: relative;
   bottom: 0rem;
   padding-bottom: 1rem;
   display: -webkit-box;
