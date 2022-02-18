@@ -37,7 +37,7 @@ html, body {
   -webkit-box-direction: normal;
       -ms-flex-flow: row;
           flex-flow: row;
-  height: calc( 100% - 4rem);
+  height: calc( 100% - 3rem);
 }
 
 #container-body #container-main #index {
