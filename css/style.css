@@ -161,9 +161,8 @@ html, body {
 }
 
 #container-body #container-main #shop #section-shop #date-client article {
-  width: 50%;
+  width: 45%;
   height: 4rem;
-  padding: 0.2rem;
 }
 
 #container-body #container-main #shop #section-shop #date-client article input {
@@ -176,10 +175,6 @@ html, body {
 
 #container-body #container-main #shop #section-shop section {
   background-color: white;
-}
-
-#container-body #container-main #shop #section-shop section article {
-  padding: 1rem;
 }
 
 #container-body #container-main #shop footer {
