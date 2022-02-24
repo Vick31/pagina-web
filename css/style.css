@@ -81,16 +81,12 @@ html, body {
   color: white;
   text-align: center;
   line-height: 1.7;
-  -webkit-box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
-          box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
   -webkit-transition: 300ms all ease-in-out;
   transition: 300ms all ease-in-out;
 }
 
 #container-body #container-main #index .circle:hover {
   cursor: pointer;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
 }
 
 #container-body #container-main main {
