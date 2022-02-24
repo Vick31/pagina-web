@@ -6,6 +6,23 @@
           box-sizing: border-box;
 }
 
+* ::-webkit-scrollbar {
+  width: 7px;
+}
+
+* ::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+* ::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #aca9a9;
+}
+
+* ::-webkit-scrollbar-thumb:hover {
+  background-color: gray;
+}
+
 html, body {
   height: 100%;
   margin: 0;
@@ -24,9 +41,19 @@ html, body {
 }
 
 #container-body #nav-bar {
+  position: relative;
   width: 100%;
   height: 3rem;
   background-color: #00b19d;
+}
+
+#container-body #nav-bar img {
+  color: white;
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
 }
 
 #container-body #container-main {
@@ -41,6 +68,7 @@ html, body {
 }
 
 #container-body #container-main #index {
+  width: 4rem;
   background-color: white;
 }
 
@@ -49,7 +77,20 @@ html, body {
   height: 2.5rem;
   background-color: gray;
   border-radius: 100%;
-  margin: 0.5rem;
+  margin: 0.7rem;
+  color: white;
+  text-align: center;
+  line-height: 1.7;
+  -webkit-box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
+          box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
+  -webkit-transition: 300ms all ease-in-out;
+  transition: 300ms all ease-in-out;
+}
+
+#container-body #container-main #index .circle:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 #container-body #container-main main {
@@ -65,10 +106,29 @@ html, body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding-top: 1rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 1rem;
+}
+
+#container-body #container-main main #section-search small {
+  margin: 0.8rem;
+  color: gray;
+}
+
+#container-body #container-main main #section-search #ad {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-top: 0.2rem;
+  -webkit-transition: 300ms all ease-in-out;
+  transition: 300ms all ease-in-out;
+}
+
+#container-body #container-main main #section-search #ad:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 #container-body #container-main main #section-search button {
@@ -88,7 +148,7 @@ html, body {
 #container-body #container-main main #section-search input {
   border: 1px solid #809bb6;
   border-radius: 3px;
-  width: 35vw;
+  width: 80%;
   height: 2.6rem;
   padding-left: 1rem;
 }
@@ -105,21 +165,27 @@ html, body {
 }
 
 #container-body #container-main main #content article {
-  width: 15rem;
-  height: 22rem;
+  position: relative;
+  width: 12rem;
+  height: 18rem;
   background-color: white;
-  margin-top: 2rem;
-  margin-left: 3.5rem;
-  margin-right: 3.5rem;
-  border-radius: 5px;
-  -webkit-box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.3);
-          box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.3);
+  padding: 0.5rem;
+  -webkit-box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
+          box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
   text-align: center;
 }
 
+#container-body #container-main main #content article small {
+  color: gray;
+}
+
+#container-body #container-main main #content article div {
+  line-height: 2;
+}
+
 #container-body #container-main main #content article img {
-  width: 15rem;
-  height: 15rem;
+  width: 11rem;
+  height: 12rem;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -132,10 +198,53 @@ html, body {
   color: white;
 }
 
+#container-body #container-main main #content article .code {
+  width: 3rem;
+  background-color: white;
+  text-align: center;
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  color: gray;
+}
+
+#container-body #container-main main #content article .inv {
+  width: 3rem;
+  background-color: white;
+  position: absolute;
+  bottom: 5.5rem;
+  right: 0.5rem;
+  color: black;
+}
+
+#container-body #container-main main #content article .star {
+  width: 1.6rem;
+  height: 1.6rem;
+  font-size: 1.8rem;
+  background-color: white;
+  color: gray;
+  position: absolute;
+  top: 1.6rem;
+  right: 0.5rem;
+  line-height: 0.9;
+}
+
+#container-body #container-main main #content article .n-circle {
+  width: 2rem;
+  height: 2rem;
+  line-height: 2;
+  background-color: white;
+  border-radius: 100%;
+  position: absolute;
+  top: -0.5rem;
+  right: -0.5rem;
+}
+
 #container-body #container-main #shop {
-  -webkit-box-flex: 0.5;
-      -ms-flex: 0.5;
-          flex: 0.5;
+  position: relative;
+  -webkit-box-flex: 0.6;
+      -ms-flex: 0.6;
+          flex: 0.6;
   height: 100%;
 }
 
@@ -148,7 +257,9 @@ html, body {
 }
 
 #container-body #container-main #shop #section-shop {
-  height: 80%;
+  position: relative;
+  overflow-y: scroll;
+  height: calc(100% - 10.5rem);
 }
 
 #container-body #container-main #shop #section-shop #date-client {
@@ -174,24 +285,68 @@ html, body {
 }
 
 #container-body #container-main #shop #section-shop #date-product article {
-  height: 4rem;
-  padding: 0.5rem;
-  border: 1px solid red;
-}
-
-#container-body #container-main #shop footer {
-  position: absolute;
-  bottom: 0;
-  background-color: #f5f5f5;
-  padding-bottom: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
-  width: 32%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0.5rem;
+  line-height: 3;
+}
+
+#container-body #container-main #shop #section-shop #date-product article div {
+  width: 14rem;
+  line-height: 1.5;
+}
+
+#container-body #container-main #shop #section-shop #date-product article span {
+  width: 2rem;
+  height: 2rem;
+  text-align: center;
+  border-radius: 100%;
+  border: 1px solid #809bb6;
+  line-height: 2;
+  margin-top: 0.3rem;
+}
+
+#container-body #container-main #shop #section-shop #date-product article .btn {
+  border-radius: 100%;
+  margin-top: 0.3rem;
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  -webkit-box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
+          box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.5);
+}
+
+#container-body #container-main #shop #section-shop #date-product article button {
+  font-size: 1.4rem;
+  margin-top: 0.4rem;
+  width: 1.7rem;
+  height: 2rem;
+  -webkit-transition: 300ms all ease;
+  transition: 300ms all ease;
+}
+
+#container-body #container-main #shop #section-shop #date-product article button img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+#container-body #container-main #shop #section-shop #date-product article button:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+#container-body #container-main #shop footer {
+  position: relative;
+  bottom: 0;
+  background-color: #f5f5f5;
+  width: 100%;
   color: white;
 }
 
@@ -223,5 +378,9 @@ html, body {
 
 #container-body #container-main #shop footer div h4 {
   margin: 1rem;
+}
+
+.border {
+  border: 1px solid #5e65eb;
 }
 /*# sourceMappingURL=style.css.map */
