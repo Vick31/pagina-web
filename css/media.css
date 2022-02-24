@@ -1,3 +1,21 @@
+@media (min-width: 100px) and (max-width: 268px) {
+  #content {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-top: 1rem;
+  }
+  #content article {
+    margin: 1rem;
+  }
+  #index {
+    display: none;
+  }
+  #shop {
+    display: none;
+  }
+}
+
 @media (min-width: 268px) and (max-width: 370px) {
   #content {
     -webkit-box-pack: justify;
